@@ -10,7 +10,7 @@ double rand_uniform();
 // Prototype/declaration of a function that will perform a single
 // simulation of two rolls of paper and users
 // Returns the number of squares left on the non-empty roll
-int single_sim(int N, double p);
+int single_sim(double N, double p);
 
 int main(int argc, char *argv[])
 {
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 
 // return the number of squares on the non-empty roll
 //  for this simulation of the problem
-int single_sim(int N, double p)
+int single_sim(double N, double p)
 {
     int big_roll = N;
     int small_roll = N;
