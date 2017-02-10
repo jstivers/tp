@@ -53,7 +53,7 @@ int single_sim(double N, double p)
 
     while(small_roll > 0 && big_roll > 0) {
         double random_value = rand_uniform ();
-        prob < random_value ? small_roll : big_roll --;
+        prob < random_value ? small_roll -- : big_roll --;
     }
     return small_roll <= 0 ? big_roll : small_roll;
 
