@@ -1,5 +1,5 @@
 #include <iostream>   // Basic I/O => cin, cout, etc.
-#include <cstdlib>    // Other helpful functions => rand(), RANDMAX
+#include "math.h"
 
 using namespace std;
 
@@ -34,6 +34,10 @@ int main(int argc, char *argv[])
         output += single_sim(N,p);
     }
     output = output/sims;
+
+    output = round (output * 1000.0) / 1000.0;
+    output < 0.0 ? ( output = ceil (output - 0.5)) : floor (output + 0.5);
+
 
     cout << ("Average: ") << output;
 
