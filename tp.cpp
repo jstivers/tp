@@ -10,7 +10,7 @@ double rand_uniform();
 // Prototype/declaration of a function that will perform a single
 // simulation of two rolls of paper and users
 // Returns the number of squares left on the non-empty roll
-int single_sim(double N, double p);
+double single_sim (double N, double p);
 
 int main(int argc, char *argv[])
 {
@@ -49,18 +49,19 @@ int main(int argc, char *argv[])
 
 // return the number of squares on the non-empty roll
 //  for this simulation of the problem
-int single_sim(double N, double p)
+double single_sim (double N, double p)
 {
-    int big_roll = N;
-    int small_roll = N;
+    double big_roll = N;
+    double small_roll = N;
     double prob = 1 - p;
 
-    while(small_roll > 0 && big_roll > 0) {
+
+    while ( small_roll != 0 && big_roll != 0 ) {
+
         double random_value = rand_uniform ();
         prob < random_value ? small_roll -- : big_roll --;
     }
     return small_roll <= 0 ? big_roll : small_roll;
-
 
 
 }
@@ -72,7 +73,7 @@ int single_sim(double N, double p)
 //  produce a random number in the range [0,1]
 double rand_uniform()
 {
-    double cast = (double)rand() / ((double)RAND_MAX);
+    double cast = ((double) rand () / (double) RAND_MAX );
 
     return cast;
 
