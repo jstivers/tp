@@ -61,10 +61,10 @@ double single_sim (double N, double p)
         double random_value = rand_uniform ();
 
         prob = round (prob * 100.0) / 100.0;
-        prob < 0.0 ? ( prob = ceil (prob - 0.5)) : floor (prob + 0.5);
+        prob < 0.0 ? ( prob = ceil (prob - 0.005)) : floor (prob + 0.005);
 
         random_value = round (random_value * 100.0) / 100.0;
-        random_value < 0.0 ? ( random_value = ceil (random_value - 0.5)) : floor (random_value + 0.5);
+        random_value < 0.0 ? ( random_value = ceil (random_value - 0.005)) : floor (random_value + 0.005);
 
         prob < random_value ? small_roll -- : big_roll --;
     }
@@ -80,7 +80,8 @@ double single_sim (double N, double p)
 //  produce a random number in the range [0,1]
 double rand_uniform()
 {
-    double cast = ((double) rand () / (double) RAND_MAX );
+    double cast;
+    cast = (double) rand () / (double) RAND_MAX;
 
     return cast;
 
