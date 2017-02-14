@@ -53,13 +53,14 @@ double single_sim (double N, double p)
 {
     double big_roll = N;
     double small_roll = N;
-    double prob = 1 - p;
+    double prob = p;
 
 
     while ( small_roll != 0 && big_roll != 0 ) {
 
         double random_value = rand_uniform ();
 
+        // the following code brings the averages closer to the examples in the instructions
         prob = round (prob * 100.0) / 100.0;
         prob < 0.0 ? ( prob = ceil (prob - 0.005)) : floor (prob + 0.005);
 
