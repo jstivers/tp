@@ -49,22 +49,37 @@ int main(int argc, char *argv[])
 
 double single_sim (double N, double p)
 {
-    double big_roll = N;
-    double small_roll = N;
-    double prob = p;
+    double roll_1 = N;
+    double roll_2 = N;
+    double big_chooser = p;
+    double small_chooser = 1 - p;
 
 
-    while ( small_roll != 0.00 && big_roll != 0.00 ) {
+    while ( roll_2 != 0.00 && roll_1 != 0.00 ) {
 
         double random_value = rand_uniform ();
 
-        // the following code brings the averages closer to the examples in the instructions
-        random_value = round (random_value * 100.0) / 100.0;
-        random_value < 0.0 ? ( random_value = ceil (random_value - 0.005)) : floor (random_value + 0.005);
+        if ( roll_1 == roll_2 ) {
+            roll_1 --;
+        }
+        if ( random_value == big_chooser == small_chooser ) {
+            roll_1 --;
+        }
+        if ( random_value == big_chooser ) {
+            roll_1 >= roll_2 ? roll_1 -- : roll_2 --;
+        }
+        if ( random_value == small_chooser ) {
+            roll_1 <= roll_2 ? roll_1 -- : roll_2 --;
+        }
+        else if ( random_value > big_chooser ) {
+            roll_1 >= roll_2 ? roll_1 -- : roll_2 --;
+        }
+        else if ( random_value < small_chooser ) {
+            roll_1 <= roll_2 ? roll_1 -- : roll_2 --;
 
-        prob < random_value ? small_roll -- : big_roll --;
+        }
     }
-    return small_roll <= 0.00 ? big_roll : small_roll;
+    return roll_2 <= 0.00 ? roll_1 : roll_2;
 
 
 }
