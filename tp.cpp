@@ -1,6 +1,7 @@
 #include <iostream>   // Basic I/O => cin, cout, etc.
 #include "math.h"
 #include <iomanip>
+#include <cstdlib>
 using namespace std;
 
 // Prototype/declaration of a function that returns a
@@ -58,9 +59,6 @@ double single_sim (double N, double p)
         double random_value = rand_uniform ();
 
         // the following code brings the averages closer to the examples in the instructions
-        prob = round (prob * 100.0) / 100.0;
-        prob < 0.0 ? ( prob = ceil (prob - 0.005)) : floor (prob + 0.005);
-
         random_value = round (random_value * 100.0) / 100.0;
         random_value < 0.0 ? ( random_value = ceil (random_value - 0.005)) : floor (random_value + 0.005);
 

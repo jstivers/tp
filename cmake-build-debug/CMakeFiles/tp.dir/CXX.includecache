@@ -11,6 +11,8 @@ iostream
 -
 math.h
 /Users/johnstivers/cs103/tp/math.h
+iomanip
+-
 cstdlib
 -
 
