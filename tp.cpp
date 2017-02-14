@@ -1,6 +1,6 @@
 #include <iostream>   // Basic I/O => cin, cout, etc.
 #include "math.h"
-
+#include <iomanip>
 using namespace std;
 
 // Prototype/declaration of a function that returns a
@@ -35,11 +35,7 @@ int main(int argc, char *argv[])
     }
     output = output/sims;
 
-    output = round (output * 1000.0) / 1000.0;
-    output < 0.0 ? ( output = ceil (output - 0.5)) : floor (output + 0.5);
-
-
-    cout << ("Average: ") << output;
+    cout << setprecision (4) << ( "Average: " ) << output;
 
     // Be sure you produce an output of the form:
     //    Average: 1.2314
@@ -49,6 +45,7 @@ int main(int argc, char *argv[])
 
 // return the number of squares on the non-empty roll
 //  for this simulation of the problem
+
 double single_sim (double N, double p)
 {
     double big_roll = N;
@@ -56,7 +53,7 @@ double single_sim (double N, double p)
     double prob = p;
 
 
-    while ( small_roll != 0 && big_roll != 0 ) {
+    while ( small_roll != 0.00 && big_roll != 0.00 ) {
 
         double random_value = rand_uniform ();
 
@@ -69,7 +66,7 @@ double single_sim (double N, double p)
 
         prob < random_value ? small_roll -- : big_roll --;
     }
-    return small_roll <= 0 ? big_roll : small_roll;
+    return small_roll <= 0.00 ? big_roll : small_roll;
 
 
 }
