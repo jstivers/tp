@@ -65,12 +65,6 @@ double single_sim (double N, double p)
         if ( random_value == big_chooser == small_chooser ) {
             roll_1 --;
         }
-        if ( random_value == big_chooser ) {
-            roll_1 >= roll_2 ? roll_1 -- : roll_2 --;
-        }
-        if ( random_value == small_chooser ) {
-            roll_1 <= roll_2 ? roll_1 -- : roll_2 --;
-        }
         else if ( random_value > big_chooser ) {
             roll_1 >= roll_2 ? roll_1 -- : roll_2 --;
         }

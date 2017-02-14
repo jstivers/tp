@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b065432-a6b2-4f2c-8797-79277160e1a9" name="Default" comment="push">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tp" afterPath="$PROJECT_DIR$/cmake-build-debug/tp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tp.dir/tp.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tp.dir/tp.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tp.cpp" afterPath="$PROJECT_DIR$/tp.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="tp.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tp.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state relative-caret-position="90">
+              <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -304,7 +306,7 @@
       <workItem from="1487018127692" duration="11000" />
       <workItem from="1487018158888" duration="291000" />
       <workItem from="1487019570209" duration="3048000" />
-      <workItem from="1487033133691" duration="7232000" />
+      <workItem from="1487033133691" duration="7338000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1486712660853</created>
@@ -439,11 +441,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487039670085</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="push">
+      <created>1487052000443</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1487052000443</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26923000" />
+    <option name="totallyTimeSpent" value="27029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -599,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tp.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="90">
+          <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
